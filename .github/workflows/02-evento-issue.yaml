@@ -1,0 +1,15 @@
+
+name: 02 - Evento issue
+on:
+    push:
+    issues:
+        types:
+            opened
+
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Hola Pierre
+      run: echo "Hola Pierre!"
